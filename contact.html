@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="left_side">
+            <h1>Let's get in Touch</h1>
+            <img src="./photo/devv.gif" alt="Developer Gif" title="Developer Gif">
+            <p>Connect with us:</p>
+            <div class="icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="right_side">
+            <h1>Contact Us</h1>
+            <form onsubmit="sendMessage(event)">
+                <input id="name" type="text" placeholder="Name" required >
+                <input id="email" type="email" placeholder="email" required>
+                <input id="phone" type="tel" placeholder="Phone" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit" onclick="sendMessage()">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
